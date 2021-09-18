@@ -12,9 +12,15 @@ Original file is located at
 #    2. Tính tổng các chữ số của số đó.
 #    3. Hiển thị kết qủa ra màn hinh
 
+#YC1:
+n = int(input('Nhập n ='))
+while n >= 1000:
+  n = int(input('Nhập n ='))
+
+#YC2:
 n = int(input('Nhập n ='))
 sum_n = 0
-i = 0
-for i in range(n+1):
-  sum_n = sum_n + i
-  print(f'Tổng các số nguyên dương = {sum_n}')
+while n < 1000:
+  sum_n = sum_n + n%10
+  n = int(n/10)
+  print(f'Tổng các chữ số của n = {sum_n}')
