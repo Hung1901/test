@@ -9,5 +9,7 @@ Original file is located at
 
 #Bài 04. Viết chương trình đảo ngược từ ký tự thường sang ký tự hoa và từ ký tự hoa sang ký tự thường trong một chuỗi.
 s = input('Nhập chuỗi bất kỳ: ')
-print(s.upper())
-print(s.lower())
+if s == s.upper():
+  print(s.lower())
+else:
+  print(s.upper())
