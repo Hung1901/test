@@ -12,6 +12,8 @@ Original file is located at
 #    2. Nhập vào 1 ký tự từ bàn phím
 #    3. Tìm và in ra tất cả các vị trí của ký tự vừa nhập trong chuỗi đã nhập
 
-s = input('Nhập chuỗi: ')
-sub = input('Nhập ký tự: ')
-print(s.count(sub))
+s = input("Nhập một chuỗi: ")
+sub = input(" Nhập ký tự: ")
+for i in range(len(s)):
+    if s[i] == sub:
+        print(i)
