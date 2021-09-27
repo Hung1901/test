@@ -15,4 +15,5 @@ for i in tuple_1:
     if i in tuple_2:
         chung = True
         break
-print(f"Hai list có phần tử chung không? {chung}")
+print(f"Hai tuple có phần tử chung không? {chung}")
+
